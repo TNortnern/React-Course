@@ -21,7 +21,7 @@ class App extends Component {
       <div>
         <SearchBar onSubmit={this.onSearchSubmit} />
         Found {this.state.images.length} images
-        <ImageList />
+        <ImageList images={this.state.images} />
       </div>
     );
   }
